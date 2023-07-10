@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.container .head {
+  max-width: 100%;
+  padding: 5px 0px 0px 0px;
+  color: #f3f3f3;
+  background-color: #42855b;
+}
+
+.container .logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.container .logo span {
+  font-size: 40px;
+  margin: 0px 5px;
+}
+
+.container .menu {
+  background-color: #ffffff;
+  color: #483838;
+}
+
+.container .menu ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5px 0px;
+}
+
+.container .menu ul li a {
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.container .menu ul li a:hover {
+  color: #f3f3f3;
+  background-color: #42855b;
+}
+
+.container .content {
+  width: 100%;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.container .isi {
+  width: 100%;
+}
+
+.container .judul {
+  text-align: center;
+  background-color: #ededed;
+  padding: 5px 0px;
+}
+
+.container .foot {
+  color: #f3f3f3;
+  margin-top: auto;
+  background-color: #42855b;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 8px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    position: relative;
+  }
+  .container {
+    position: relative;
+  }
+  .container .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container .menu {
+    background-color: #42855b;
+    color: #ffffff;
+  }
+  .container .menu ul li a {
+    margin: 0px 8px;
+    color: #ffffff;
+  }
+  .container .menu ul li a:hover {
+    color: #42855b;
+    background-color: #ffffff;
+  }
+  .container .content {
+    justify-content: center;
+  }
+  .container .isi {
+    width: 80%;
+  }
+  .container .judul {
+    background-color: #efefef5e;
+    padding: 8px 0px;
+  }
+}
+
+/* DASHBOARD */
+.kontrol {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowKet {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowKet .col {
+  border: solid 0px #959595;
+  width: auto;
+  padding: 5px 10px;
+}
+
+.rowKet .col a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.rowKet .col a.mati {
+  background-color: #aa0404;
+}
+
+.rowKet .col a.nyala {
+  background-color: #04aa6d;
+}
+
+.colTanggal {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.colTanggal table {
+  width: 100%;
+  text-align: center;
+}
+
+.data {
+  margin: 10px 0px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.data .card {
+  margin: 5px 0px;
+  padding: 5px 5px;
+  width: 90%;
+  color: #ededed;
+  border: solid 1px #eff5f5;
+  border-radius: 6px;
+}
+
+.data .suhu {
+  background-color: #eb6440;
+}
+
+.data .lembab {
+  background-color: #497174;
+}
+
+.data .air {
+  background-color: #484b77;
+}
+
+.data .card .judulCard {
+  font-weight: 500;
+  font-size: 30px;
+  border-bottom: solid 4px #cdcdcdc9;
+}
+
+.data .card .bodyCard {
+  margin: 5px 0px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .data {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .data .card {
+    margin: 5px 10px;
+    width: 45%;
+  }
+}
+
+/* HISTORY */
+.history {
+  width: 100%;
+}
+
+.history table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.history table thead {
+  font-weight: 500;
+}
+
+.history th,
+td {
+  padding: 7px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.history tbody {
+  font-size: 10px;
+}
